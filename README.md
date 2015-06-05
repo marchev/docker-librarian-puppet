@@ -1,10 +1,9 @@
-docker-librarian-puppet
+marchev/librarian-puppet
 =======================
+Base images with `puppet` & `librarian-puppet` provisioned
 
-Dockerfiles for base images that use librarian-puppet to be provisioned
-
-How to use them
+Usage
 ---------------
-1. Use them as an argument for the FROM instruction of your Dockerfile
-1. Put a librarian Puppetfile in the same directory of your Dockerfile
-1. Put a puppet file in manifests/site.pp with your provisioning
+1. Specify one the base image as a `FROM` instruction of your `Dockerfile`, e.g. `FROM marchev/librarian-puppet`
+1. Create a `Puppetfile` in the same directory as `Dockerfile`
+1. Create a `manifests/site.pp` file with your Puppet provisioning
